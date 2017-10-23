@@ -6,12 +6,8 @@ export function toConstantCase(value: string) {
 }
 
 export function applyEnvironmentVariables<T extends object>(config: T,
-                                                            envVariableRootPrefix?: string,
-                                                            envVariableStore?: object): T {
-  // default argument values cannot be used in node@4
-  envVariableRootPrefix = envVariableRootPrefix || '';
-  envVariableStore = envVariableStore || process.env;
-
+                                                            envVariableRootPrefix: string = '',
+                                                            envVariableStore: object = process.env): T {
   return (function next(data: object, envVariablePrefix: string) {
     const configuredData = {} as T;
     Object.keys(data).forEach((key) => {
