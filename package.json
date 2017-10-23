@@ -4,6 +4,21 @@
   "version": "0.1.0",
   "main": "./dist",
   "typings": "./dist/index.d.ts",
+  "description": "Simple utility functions for configuration management",
+  "author": "Tamas Magedli <tamas.magedli@gmail.com>",
+  "homepage": "https://github.com/urbanjs/urbanjs-config",
+  "keywords": [
+    "config",
+    "configuration",
+    "dotenv",
+    "env",
+    "environment",
+    "environment-variables"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/urbanjs/urbanjs-config"
+  },
   "scripts": {
     "test": "gulp test",
     "test-e2e": "gulp test-e2e",
