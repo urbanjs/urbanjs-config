@@ -1,1 +1,1 @@
-export { applyEnvironmentVariables } from './utils';
+export { applyEnvironmentVariables, resolveReferences } from './utils';
