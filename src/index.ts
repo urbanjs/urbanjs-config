@@ -1,1 +1,1 @@
-// let's get started
+export { applyEnvironmentVariables } from './utils';
