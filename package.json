@@ -6,11 +6,13 @@
   "typings": "./dist/index.d.ts",
   "scripts": {
     "test": "gulp test",
+    "test-e2e": "gulp test-e2e",
     "pre-release": "gulp pre-release"
   },
   "devDependencies": {
     "@types/mocha": "*",
     "@types/node": "*",
+    "ajv": "^5.2.4",
     "es6-template-strings": "^2.0.1",
     "gulp": "^3.9.1",
     "urbanjs-tool-babel": "^1.1.0",

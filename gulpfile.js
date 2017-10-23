@@ -3,9 +3,10 @@
 const gulp = require('gulp');
 const tools = require('urbanjs-tools');
 
-tools.setGlobalConfiguration({
-  babel: false
-});
+tools.setGlobalConfiguration(defaults => Object.assign(defaults, {
+  babel: false,
+  sourceFiles: defaults.sourceFiles.concat('examples/**/*.ts')
+}));
 
 tools.initialize(gulp, {
   babel: {
@@ -29,6 +30,11 @@ tools.initialize(gulp, {
   tslint: {
     configFile: './tslint.json'
   }
+});
+
+tools.tasks.mocha.register(gulp, 'test-e2e', {
+  collectCoverage: false,
+  files: 'examples/*-tests.ts'
 });
 
 gulp.task('default', ['test:watch']);
