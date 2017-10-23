@@ -1,0 +1,25 @@
+{
+  "name": "urbanjs-config",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "./dist",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "test": "gulp test",
+    "pre-release": "gulp pre-release"
+  },
+  "devDependencies": {
+    "@types/mocha": "*",
+    "@types/node": "*",
+    "gulp": "^3.9.1",
+    "urbanjs-tool-babel": "^1.1.0",
+    "urbanjs-tool-check-dependencies": "^1.1.0",
+    "urbanjs-tool-check-file-names": "^1.1.0",
+    "urbanjs-tool-conventional-changelog": "^1.1.0",
+    "urbanjs-tool-mocha": "^1.1.0",
+    "urbanjs-tool-nsp": "^1.1.0",
+    "urbanjs-tool-retire": "^1.1.0",
+    "urbanjs-tool-tslint": "^1.1.0",
+    "urbanjs-tools": "^2.1.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "./node_modules/urbanjs-tool-tslint/tslint.json"
+  ],
+  "rules": {
+    "trailing-comma": false,
+    "ordered-imports": false,
+    "interface-over-type-literal": false,
+    "object-literal-sort-keys": false,
+    "no-submodule-imports": false,
+    "no-object-literal-type-assertion": false,
+    "no-reference": false
+  }
+}
